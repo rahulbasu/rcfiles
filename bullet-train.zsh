@@ -4,4 +4,5 @@ export BULLETTRAIN_PROMPT_ORDER=(
     screen
     virtualenv
     git
-  )
+    status
+)
