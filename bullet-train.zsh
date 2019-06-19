@@ -1,8 +1,9 @@
 export BULLETTRAIN_PROMPT_ORDER=(
     time
     dir
-    screen
-    virtualenv
+#    screen
+#    virtualenv
     git
     status
 )
+
