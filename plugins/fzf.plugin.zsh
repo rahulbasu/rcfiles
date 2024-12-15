@@ -1,3 +1,6 @@
+# Install auto completion
+source <(fzf --zsh)
+
 # https://github.com/junegunn/fzf#options
 export FZF_CTRL_R_OPTS="--reverse"
 alias proc="ps aux | fzf"
@@ -35,3 +38,4 @@ sort -u | awk '{print "\x1b[34;1mbranch\x1b[m\t" $1}') || return
         --ansi --preview="git log -200 --pretty=format:%s $(echo {+2..} |  sed 's/$/../' )" ) || return
   git checkout $(echo "$target" | awk '{print $2}')
 }
+
